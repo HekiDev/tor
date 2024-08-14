@@ -27,7 +27,7 @@
                     <div class="flex gap-4 justify-center flex-col sm:flex-row">
                         <!-- <Button type="button" label="Download resume" icon="pi pi-arrow-down" class="py-3 px-4" /> -->
                         <Button as="a" label="Download resume" class="py-3 px-4" icon="pi pi-arrow-down" href="/file/hectormorada.pdf" download target="_blank" rel="noopener" />
-                        <Button type="button" label="Let's connect" icon="pi pi-share-alt" severity="secondary"  @click="toggle" aria-haspopup="true" aria-controls="overlay_menu" outlined />
+                        <Button type="button" label="Let's connect" icon="pi pi-share-alt" severity="secondary" class="py-3 px-4" @click="toggle" aria-haspopup="true" aria-controls="overlay_menu" outlined />
                         <Menu ref="menu" id="overlay_menu" :model="contacts" :popup="true" />
                     </div>
                 </div>

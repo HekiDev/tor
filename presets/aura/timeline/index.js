@@ -10,11 +10,11 @@ export default {
     }),
     event: ({ props, context }) => ({
         class: [
-            'flex relative min-h-[70px]',
+            'flex flex-col md:flex-row relative min-h-[70px]',
             {
-                'flex-row-reverse': props.align === 'right' || (props.layout === 'vertical' && props.align === 'alternate' && context.index % 2 === 1),
+                'flex-row md:flex-row-reverse': props.align === 'right' || (props.layout === 'vertical' && props.align === 'alternate' && context.index % 2 === 1),
                 'flex-col [&:not(:last-child)]:flex-1': props.layout === 'horizontal',
-                'flex-col-reverse ': props.align === 'bottom' || (props.layout === 'horizontal' && props.align === 'alternate' && context.index % 2 === 1)
+                'flex-col md:flex-col-reverse ': props.align === 'bottom' || (props.layout === 'horizontal' && props.align === 'alternate' && context.index % 2 === 1)
             }
         ]
     }),
@@ -26,8 +26,8 @@ export default {
                 'py-4': props.layout === 'horizontal'
             },
             {
-                'text-right': props.align === 'left' || (props.layout === 'vertical' && props.align === 'alternate' && context.index % 2 === 0),
-                'text-left': props.align === 'right' || (props.layout === 'vertical' && props.align === 'alternate' && context.index % 2 === 1)
+                'text-left md:text-right': props.align === 'left' || (props.layout === 'vertical' && props.align === 'alternate' && context.index % 2 === 0),
+                'text-left md:text-left': props.align === 'right' || (props.layout === 'vertical' && props.align === 'alternate' && context.index % 2 === 1)
             }
         ]
     }),
