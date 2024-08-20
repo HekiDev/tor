@@ -243,7 +243,9 @@ export const experiences = [
         date: 'Feb 2024 – Present',
         color: '#9C27B0',
         responsibilities: [
-			'Design and implement ERD/Databases',
+			'Design and implement ERD/Databases.',
+			'Converting design from figma to full function web application.',
+			'Implemented Websockets for a Messaging web-based application.',
             'Develop clients web applications.',
             'Develop and maintain existing web applications.',
             'Develop API for an mobile app developed using flutter.',
