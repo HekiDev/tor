@@ -271,3 +271,60 @@ export const experiences = [
         ]
     },
 ]
+
+export const colors = [
+	{
+        name: 'Purple',
+        id: 1, 
+        schemes: [
+            '#f6f6fc',
+            '#f0eff8',
+            '#e2e1f3',
+            '#cdc9e9',
+            '#b2aadb',
+            '#9687cb',
+            '#826cbb',
+            '#7b65ae',
+            '#5e4a8d',
+            '#4e3e74',
+            '#32284d',
+        ],
+        base: '#b2aadb',
+    },
+    {
+        name: 'Green',
+        id: 2,
+        schemes: [
+            '#effef7',
+            '#d9ffed',
+            '#b5fddc',
+            '#7cf9c1',
+            '#35eb9a',
+            '#13d47f',
+            '#09b067',
+            '#0b8a52',
+            '#0f6c44',
+            '#0e593a',
+            '#01321e',
+        ],
+        base: '#35eb9a',
+    },
+    {
+        name: 'Amber',
+        id: 3,
+        schemes: [
+            '#fdf9e9',
+            '#faf2c7',
+            '#f6e292',
+            '#f1cb53',
+            '#ecb732',
+            '#db9b17',
+            '#bd7711',
+            '#975511',
+            '#7d4416',
+            '#6b3818',
+            '#3e1d0a',
+        ],
+        base: '#ecb732',
+    }
+]
