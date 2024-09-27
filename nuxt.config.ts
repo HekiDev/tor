@@ -4,7 +4,14 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css', 'primeicons/primeicons.css'],
-  modules: ['@primevue/nuxt-module', "@nuxtjs/tailwindcss"],
+  modules: ['@primevue/nuxt-module', "@nuxtjs/tailwindcss", 'nuxt-gtag'],
+  runtimeConfig: {
+    public: {
+      gtag: {
+        id: 'G-HLV7VQL6HD' // Your GA4 tracking ID
+      }
+    }
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
